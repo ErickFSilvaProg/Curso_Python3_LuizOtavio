@@ -1,0 +1,12 @@
+— Após a instalação do Python, no Windows, abra o PowerShell e verifique a "ExecutionPolicy":
+    
+    1. Verificar o modo atual:
+        
+        Get-ExecutionPolicy
+        
+            ↪ Por padrão retornará: Restricted
+    
+
+    2. Altere para "RemoteSigned":
+
+        Set-ExecutionPolicy RemoteSigned -Force

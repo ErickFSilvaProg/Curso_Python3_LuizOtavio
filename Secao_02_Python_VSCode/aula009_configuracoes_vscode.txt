@@ -1,0 +1,28 @@
+1. Configurar o "settings.json":
+
+    {
+        "workbench.startupEditor": "none",
+        "workbench.iconTheme": "material-icon-theme",
+        "window.zoomLevel": 0,
+        "editor.fontSize": 14,
+        "editor.fontFamily": "Consolas",
+        "explorer.compactFolders": false,
+        "editor.wordWrap": "on",
+        "editor.minimap.enabled": false,
+        "code-runner.ignoreSelection": true,
+        "code-runner.runInTerminal": true,
+        "code-runner.executorMap": {
+            "python": "clear ; python -u",
+            "javascript": "clear ; node",
+            "typescript": "clear ; ts-node"
+        },
+        /* Alterar após a configuração do ambiente virtual "venv" */
+        "python.defaultInterpreterPath": "C:\\Program Files\\Python313\\python.exe"
+    }
+
+
+2. Instalar as extenções:
+
+    1. Code Runner;
+    2. Python;
+    3. Material Icon Theme;
