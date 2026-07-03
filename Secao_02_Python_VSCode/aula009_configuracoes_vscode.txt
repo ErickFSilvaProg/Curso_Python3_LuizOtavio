@@ -17,7 +17,7 @@
             "typescript": "clear ; ts-node"
         },
         /* Alterar após a configuração do ambiente virtual "venv" */
-        "python.defaultInterpreterPath": "C:\\Program Files\\Python313\\python.exe"
+        // "python.defaultInterpreterPath": "C:\\Program Files\\Python313\\python.exe"
     }
 
 
