@@ -2,22 +2,24 @@
 
     {
         "workbench.startupEditor": "none",
-        "workbench.iconTheme": "material-icon-theme",
-        "window.zoomLevel": 0,
-        "editor.fontSize": 14,
-        "editor.fontFamily": "Consolas",
-        "explorer.compactFolders": false,
-        "editor.wordWrap": "on",
-        "editor.minimap.enabled": false,
-        "code-runner.ignoreSelection": true,
-        "code-runner.runInTerminal": true,
+		"workbench.iconTheme": "material-icon-theme",
+		"window.zoomLevel": 0,
+		"editor.fontSize": 14,
+		"editor.fontFamily": "Consolas",
+		"explorer.compactFolders": false,
+		"editor.wordWrap": "on",
+		"editor.minimap.enabled": false,
+		"code-runner.ignoreSelection": true,
+		"code-runner.runInTerminal": true,
         "code-runner.executorMap": {
             "python": "clear ; python -u",
             "javascript": "clear ; node",
             "typescript": "clear ; ts-node"
         },
+		"git.autofetch": true,
+		"workbench.colorTheme": "Dark Modern",
         /* Alterar após a configuração do ambiente virtual "venv" */
-        // "python.defaultInterpreterPath": "C:\\Program Files\\Python313\\python.exe"
+        "python.defaultInterpreterPath": "C:\\Program Files\\Python313\\python.exe"
     }
 
 
