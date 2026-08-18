@@ -9,16 +9,16 @@
 """
 
 
-# Exemplo: Inteiro
-print('String →',1234)
+# Exemplo: Strings.
+print('String', '1234', sep=' → ')
 print()
 
 
-# Aspas simples: String
+# Aspas simples: String.
 print('Erick Ferreira')
 
 
-# Aspas duplas: String
+# Aspas duplas: String.
 print('Erick Ferreira, "programador python".')
 
 

@@ -10,3 +10,12 @@
     2. Altere para "RemoteSigned":
 
         Set-ExecutionPolicy RemoteSigned -Force
+
+
+    3. Criar um ambiente virtual para teste:
+
+        python -m venv venv
+
+        3.1. Ativar o ambiente virtual:
+
+            .\venv\Scripts\activate

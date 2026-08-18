@@ -1,4 +1,5 @@
 # Comentário de linha
+# A funçao "prin()" imprime alguma coisa na tela.
 
-# Imprime no terminal: Python 3
+# Será exibido, no terminal, "Python 3".
 print('Python', 1 + 2)
