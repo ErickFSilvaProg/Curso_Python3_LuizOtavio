@@ -31,3 +31,15 @@ formato3 = texto3.format(
     nome1=a, nome2=b, nome3=c
 )
 print(formato3)
+print()
+
+
+# Outro caso de uso:
+nome = 'Erick'
+profissao = 'Desenvolvedor de software'
+stack = 'Python'
+
+perfil = '{n} é {p} na linguagem {s}'
+perfil_formatado = perfil.format(n=nome, p=profissao, s=stack)
+
+print(perfil_formatado, '\n')
