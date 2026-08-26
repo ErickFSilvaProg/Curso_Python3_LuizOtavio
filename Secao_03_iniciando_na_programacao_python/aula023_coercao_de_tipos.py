@@ -1,7 +1,7 @@
 """
     Coerção de tipos em Python (Conversão de tipos):
 
-        Type convertion, typecasting ou coericon é o ato de converter um tipo em outro tipo imutável e primitivo.
+        Type convertion, typecasting ou coercion é o ato de converter um tipo em outro tipo imutável e primitivo.
 
             ↪ Tipos primitivos: str, int, float, bool.
         

@@ -1,8 +1,8 @@
 """
 Tudo em Python é um objeto.
 Objetos, geralmente, tem métodos dentro deles.
-Os objetos contem ações que podem ser executadas, e essas ações são chamadas de métodos.
-E métodos são funções que fazem alguma coisa com o objeto.
+Os objetos contém ações que podem ser executadas, e essas ações são chamadas de métodos.
+Os métodos são funções que fazem alguma coisa com o objeto.
 Os métodos recebem parâmetros e argumentos.
 Após a nomeação de um parâmetro, todos os outros deveram ser nomeados.
 
@@ -19,7 +19,7 @@ formato1 = texto1.format(a, b, c)
 print(formato1)
 
 
-# Recuperando os valores por índice e sem parâmetros nomeados:
+# Recuperação de valores com índices e sem parâmetros nomeados:
 texto2 = 'a={0} b={1} c={2}'
 formato2 = texto2.format(a, b, c)
 print(formato2)

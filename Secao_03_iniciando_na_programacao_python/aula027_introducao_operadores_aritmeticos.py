@@ -35,7 +35,7 @@ print('Multiplicação:', num25 * num10)
 print('Divisão:', num25 / num2)
 
 
-# Divisão inteira:
+# Divisão inteira: Sempre retornará um valor bool.
 print('Divisão inteira:', num25 // num2)
 
 

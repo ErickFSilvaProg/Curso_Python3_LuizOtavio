@@ -1,5 +1,5 @@
 """
-    input() é uma funçaõ que solicita dados ao usuário.
+    input() é uma função que solicita dados ao usuário.
     Tudo o que for coletado por essa função será do tipo string.
     Se for preciso realizar algum cálculo, será necessário a coerção de tipos.
 
