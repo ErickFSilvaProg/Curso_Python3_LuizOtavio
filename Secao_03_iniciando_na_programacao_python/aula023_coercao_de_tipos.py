@@ -6,7 +6,7 @@
             ↪ Tipos primitivos: str, int, float, bool.
         
             
-        O Python  é uma liguagem de tipagem dinâmica e forte.
+        O Python é uma liguagem de tipagem dinâmica e forte.
 
             ↪ Forte porque ele não converterá um tipo em outro de forma automática.
         
@@ -23,7 +23,7 @@ print()
 
 # TypeError: can only concatenate str (not "int") to str.
 # print('1' + 1)
-print()
+# print()
 
 
 # Coerção str para int:
@@ -32,7 +32,7 @@ print()
 
 
 # Coerção str para float:
-print(float('1.1'), type(float(1.1)))
+print(float('1.1'), type(float('1.1')))
 print()
 
 

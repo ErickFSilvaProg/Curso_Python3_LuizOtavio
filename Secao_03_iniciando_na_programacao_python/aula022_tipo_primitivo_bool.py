@@ -3,7 +3,7 @@
 
         Existem duas respostas, ao questionar algo em um programa Python, "True" (verdadeiro) ou "False" (falso).
         Existem vários operadores para "questionar" no Python.
-        Dentre eles, o "==" (igual) é o operador lógico que quetiona se um valor é igual a outro.
+        Dentre eles, o "==" (igual) é o operador lógico que questiona se um valor é igual a outro.
 
 """
 

@@ -1,7 +1,7 @@
 """
     Operadores aritméticos: Hierarquia da Precedência.
 
-        1. Parênteses: ( )
+        1. Parênteses: ()
         
         2. Exponenciação: **
         

@@ -7,16 +7,16 @@
     — int: número inteiro
 
         O tipo int representa qualquer número positivo ou negativo.
-        int sem o sinal [-] é considerado positivo.
+        int sem o sinal negativo [-] é considerado positivo.
     
     — float: número com ponto flutuante
 
         O tipo float representa qualquer número positivo ou negativo com ponto flutuante.
-        float sem o sinal [-] é considerado positivo.
+        float sem o sinal negativo [-] é considerado positivo.
     
     A função "type()" mostra o tipo que o Python inferiu ao valor.
     
-    Na programação o ponto "." sempre será utilizado para separar as casas decimais de um número.
+    Na programação o ponto [.] sempre será utilizado para separar as casas decimais de um número.
     
     Tudo em Python é um objeto.
 

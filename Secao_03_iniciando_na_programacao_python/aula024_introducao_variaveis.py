@@ -1,11 +1,11 @@
 """
     Em Python, uma variável é um espaço na memória do computador usado para guardar dados.
 
-    Você cria uma variável ao digitar o nome dela e usar o sinal de igual (=) para dar um valor a ela. Não precisa declarar o tipo antes
+    Você cria uma variável ao digitar o nome dela seguido do sinal de igual (=) para dar um valor a mesma. Não precisando declarar o tipo antes.
 
     Regras da PEP8: https://peps.python.org/pep-0008/
 
-        Crie variáveis com letras minúsculas, podendo ser inserido, em seguida, números e underline;
+        Crie variáveis com letras minúsculas, podendo ser inserido, após, números e underline;
 
         O sinal de igual (=) é o operador de atribuição;
 
@@ -13,11 +13,11 @@
         
             ↪ nome = expressao
 
-            (Snake case)
+            (Formato "snake case")
             ↪ nome_composto = expressao_valor
 
     As variáveis recebem qualquer valor.
-    Quando atribuimos valores primitivos as variáveis, estamos nos referindo a valores literais.
+    Quando atribuimos valores primitivos às variáveis, estamos nos referindo a valores literais.
     Variáveis não são utilizadas para abreviar código, são utilizadas para tornar o código mais legível.
 
 """
