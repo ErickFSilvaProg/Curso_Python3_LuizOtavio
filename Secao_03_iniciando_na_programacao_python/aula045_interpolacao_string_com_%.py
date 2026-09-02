@@ -16,5 +16,5 @@ print(variavel)
 print()
 
 
-hexadecimal = 1024
-print('O hexadecimal de {hexadecimal} é %04x' % (hexadecimal))
+decimal = 4538
+print('O hexadecimal de %d é %04X' % (decimal, decimal))
