@@ -2,8 +2,8 @@
     ● Operadores lógicos:
     
         and (e) - Todas as condições precisam ser verdadeiras.
-        or (ou) - Qualquer condiçao verdadeira será avaliada como verdadeira.
-        not (não) - Negação lógica. Inverte o resultado.
+        or (ou) - Qualquer condição verdadeira será avaliada como verdadeira.
+        not (não) - Negação lógica. Inverte a expressão.
 
         Se qualquer valor for considerado verdadeiro, a expressão inteira será avalizada verdadeira.
 

@@ -2,8 +2,8 @@
     ● Operadores lógicos:
     
         and (e) - Todas as condições precisam ser verdadeiras.
-        or (ou) - Qualquer condiçao verdadeira será avaliada como verdadeira.
-        not (não) - Negação lógica. Inverte o resultado.
+        or (ou) - Qualquer condição verdadeira será avaliada como verdadeira.
+        not (não) - Negação lógica. Inverte a expressão.
 
         São considerados Falsy: 0, 0.0, '', False
         Também existe um tipo "None" que é usado para representar um "não valor".

@@ -2,8 +2,8 @@
     ● Operadores lógicos:
     
         and (e) - Todas as condições precisam ser verdadeiras.
-        or (ou) - Qualquer condiçao verdadeira será avaliada como verdadeira.
-        not (não) - Negação lógica. Inverte o resultado.
+        or (ou) - Qualquer condição verdadeira será avaliada como verdadeira.
+        not (não) - Negação lógica. Inverte a expressão.
 
         Se qualquer valor for considerado verdadeiro, a expressão inteira será avalizada verdadeira.
 
@@ -12,21 +12,5 @@
 """
 
 
-entrada = input('[E]ntrar | [S]air: ')
-senha_permitida = '123456'
-
-
-if (entrada == 'E' or entrada == 'e'):
-    senha_digitada = input('Senha: ') or 'Sem senha'
-
-    if senha_digitada == senha_permitida:
-        print('Entrar')
-else:
-    print('Sair')
-
-
-# Avaliação de curto circuito:
-print(False or True)
-print(True or False)
-print(False or False)
-print(False or False or 'abc')
+print(not True) # False
+print(not False) # True
