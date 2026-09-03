@@ -34,9 +34,9 @@ print()
 
 
 # Utilizando padding (preenchimento) na variável com texto:
-print(f'{texto:•>10}')
-print(f'{texto:•<10}')
-print(f'{texto:•^10}')
+print(f'{texto:•>11}')
+print(f'{texto:•<11}')
+print(f'{texto:•^11}')
 print()
 
 
