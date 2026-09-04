@@ -2,9 +2,14 @@
     Ordem de execução dos operadores aritméticos:
 
         1. (parênteses)
+        
         2. **
+        
         3. * / // %
+            ↪ Se houver mais de um na mesma linha, o Python resolve da esquerda para a direita.
+        
         4. + -
+            ↪ Se houver mais de um na mesma linha, o Python resolve da esquerda para a direita.
 
 """
 
