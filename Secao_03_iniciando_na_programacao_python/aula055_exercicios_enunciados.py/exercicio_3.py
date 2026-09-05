@@ -13,12 +13,18 @@
 """
 
 nome = input('Informe seu primeiro nome: ')
+tamanho_letra = len(nome)
 
-if len(nome) <= 4:
-    print('Seu nome é curto')
-elif len(nome) <= 6:
-    print('Seu nome é normal')
+if tamanho_letra > 1:
+
+    if len(nome) <= 4:
+        print('Seu nome é curto')
+    elif len(nome) <= 6:
+        print('Seu nome é normal')
+    else:
+        print('Seu nome é muito grande')
+
 else:
-    print('Seu nome é muito grande')
-
+    print('Informe mais de uma letra')
+    
 print()

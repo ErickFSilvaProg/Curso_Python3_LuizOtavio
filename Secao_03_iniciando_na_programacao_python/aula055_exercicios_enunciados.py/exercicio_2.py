@@ -14,9 +14,9 @@ if hora_atual.isdigit():
 
     if hora_atual >= 0 and hora_atual < 12:
         print('Bom dia! ☀️')
-    elif hora_atual >= 12 and hora_atual < 18:
+    elif hora_atual < 18:
         print('Boa tarde! 🌅')
-    elif hora_atual >= 18 and hora_atual <= 23:
+    elif hora_atual <= 23:
         print('Boa noite" 🌛')
     else:
         print('Hora desconhecida!!!')
