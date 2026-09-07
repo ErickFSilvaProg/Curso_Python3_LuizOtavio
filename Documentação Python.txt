@@ -1,0 +1,6 @@
+— Versão 3.13:
+https://docs.python.org/pt-br/3.13/
+
+
+•● Funções embutidas:
+https://docs.python.org/pt-br/3.13/library/functions.html
