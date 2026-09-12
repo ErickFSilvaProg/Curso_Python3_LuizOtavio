@@ -10,4 +10,8 @@ https://docs.python.org/pt-br/3.13/library/functions.html
 https://docs.python.org/pt-br/3.13/library/stdtypes.html
 
 
+•● Estruturas de dados
+https://docs.python.org/pt-br/3/tutorial/datastructures.html
+
+
 •● 
