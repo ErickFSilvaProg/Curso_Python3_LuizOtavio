@@ -19,7 +19,7 @@
         "git.autofetch": true,
         "workbench.colorTheme": "Dark Modern",
         /* Alterar após a configuração do ambiente virtual "venv" */
-        "python.defaultInterpreterPath": "C:\\Program Files\\Python313\\python.exe"
+        "python.defaultInterpreterPath": "C:\\Program Files\\Python314\\python.exe"
     }
 
 
