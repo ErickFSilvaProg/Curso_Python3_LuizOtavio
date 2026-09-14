@@ -34,23 +34,38 @@
 
             Erro ao tentar acessar um índice que não existe na lista:
                 ↪ IndexError: list index out of range
+        
+        
+        O método copy() "copia" os dados de uma lista para outra sem referencia-los.
+        Os dados são copiados para outro setor da memória.
 
 """
 
-lista_numeros = [10, 20, 30, 40]
+nome = 'Erick'
+print(nome)
 
-print(lista_numeros)
-print(lista_numeros[2])
+nome = 'João'
+print(nome)
 
-lista_numeros[2] = 300
-print(lista_numeros)
 
-del lista_numeros[2]
-print(lista_numeros)
+# Passando valores por referência:
+# *****************************************
+lista_a = ['Luiz', 'Maria']
+print(lista_a)
 
-lista_numeros.append(50)
-print(lista_numeros)
+lista_b = lista_a
+print(lista_b)
 
-item_removido = lista_numeros.pop()
-print('Item removido: ', item_removido, type(item_removido))
-print(lista_numeros)
+lista_a.append('Qualquer coisa')
+
+print('Lista A:', lista_a)
+print('Lista B:', lista_b)
+
+
+# Copiando dados e não referenciando-os:
+# *****************************************
+lista_c = lista_a.copy()
+lista_a.pop()
+
+print('Lista A:', lista_a)
+print('Lista C:', lista_c)

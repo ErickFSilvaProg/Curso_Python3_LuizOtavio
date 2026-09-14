@@ -37,20 +37,15 @@
 
 """
 
-lista_numeros = [10, 20, 30, 40]
+lista_a = [1, 2, 3]
+lista_b = [4, 5, 6]
 
-print(lista_numeros)
-print(lista_numeros[2])
 
-lista_numeros[2] = 300
-print(lista_numeros)
+# Concatenando listas:
+lista_c = lista_a + lista_b
+print(lista_c)
 
-del lista_numeros[2]
-print(lista_numeros)
 
-lista_numeros.append(50)
-print(lista_numeros)
-
-item_removido = lista_numeros.pop()
-print('Item removido: ', item_removido, type(item_removido))
-print(lista_numeros)
+# Estendendo listas:
+lista_a.extend(lista_b)
+print(lista_a)

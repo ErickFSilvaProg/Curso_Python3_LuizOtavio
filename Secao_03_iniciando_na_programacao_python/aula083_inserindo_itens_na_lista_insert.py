@@ -37,20 +37,8 @@
 
 """
 
-lista_numeros = [10, 20, 30, 40]
+lista = [10,20,30,40]
+print(lista)
 
-print(lista_numeros)
-print(lista_numeros[2])
-
-lista_numeros[2] = 300
-print(lista_numeros)
-
-del lista_numeros[2]
-print(lista_numeros)
-
-lista_numeros.append(50)
-print(lista_numeros)
-
-item_removido = lista_numeros.pop()
-print('Item removido: ', item_removido, type(item_removido))
-print(lista_numeros)
+lista.insert(50, 5000)
+print(lista[50])
