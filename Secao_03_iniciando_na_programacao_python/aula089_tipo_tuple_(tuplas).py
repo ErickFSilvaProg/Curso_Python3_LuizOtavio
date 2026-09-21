@@ -11,7 +11,7 @@
 
 """
 
-# Tupla:
+# Lista:
 listaNomes = ['Maria','Helena','Luiz']
 print(type(listaNomes))
 print(listaNomes)
