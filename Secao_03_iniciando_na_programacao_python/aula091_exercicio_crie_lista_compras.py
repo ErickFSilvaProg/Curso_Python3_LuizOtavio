@@ -16,32 +16,60 @@ import os
 lista_produtos = []
 opcao = ''
 
-# Limpa a tela dependendo do sistema operacional
-# os.system("cls" if os.name == "nt" else "clear")
 
 # Programa:
 while True:
 
     try:
+
+        print()
         print('📄 Lista de compras...')
-        opcao = input('[i]nserir | [l]istar | [a]pagar: ')
+        opcao = input('[i]nserir | [l]istar | [a]pagar: ').lower()
 
         if opcao != 'i' and opcao != 'l' and opcao != 'a':
+            
             # Forçando um erro do tipo ValueError caso as opções sejam outras. 
             raise ValueError('Opção inválida...')
         
         if opcao == 'i':
-            print(f'\nOpção escolhida: {opcao}\n')
+
+            os.system("cls" if os.name == "nt" else "clear")
+
+            addItem = ...
+            print()
+            print('📄 Lista de compras...')
+            while addItem != '':
+                addItem = input('Nome do produto: ')
+
+                if addItem != '':
+                    lista_produtos.append(addItem)
 
         if opcao == 'l':
-            print(f'\nOpção escolhida: {opcao}\n')
+
+            os.system("cls" if os.name == "nt" else "clear")
+
+            # print()
+            for indice, item in enumerate(lista_produtos, start=1):
+                print(f'{indice}. {item}')
 
         if opcao == 'a':
-            print(f'\nOpção escolhida: {opcao}\n')
 
-        # continue
+            os.system("cls" if os.name == "nt" else "clear")
+
+            for indice, item in enumerate(lista_produtos, start=1):
+                print(f'{indice}. {item}')
+            
+            remItem = ...
+            print()
+            print('📄 Lista de compras...')
+            remItem = input('Item a ser removido: ')
+            lista_produtos.remove(remItem)
+
     except ValueError as e:
-        print(f'\n{e}\n')
+
+        os.system("cls" if os.name == "nt" else "clear")
+        
+        print(f'{e}')
         continue
 
     # break
