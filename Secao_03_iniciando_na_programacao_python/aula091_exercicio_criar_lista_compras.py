@@ -8,104 +8,45 @@
 
 """
 
-# Bibliotecas:
 import os
 
+lista = []
 
-# Variáveis, listas:
-lista_produtos = []
-opcaoMenu = ''
-
-
-# Programa:
 while True:
+    print('Selecione uma opção')
+    opcao = input('[i]nserir [a]pagar [l]istar: ')
 
-    try:
-
-        # *****************************************************
-        # MENU DO PROGRAMA:
-        print()
-        print('📄 Lista de compras...')
-        opcaoMenu = input('[i]nserir | [l]istar | [a]pagar: ').lower()
-
-        if opcaoMenu != 'i' and opcaoMenu != 'l' and opcaoMenu != 'a':
-            
-            # Forçando um erro do tipo ValueError caso as opções sejam outras. 
-            raise ValueError('Opção inválida...')
-
-
-        # *****************************************************
-        # OPÇÃO PARA INSERIR DADOS NA LISTA:
-        if opcaoMenu == 'i':
-
-            os.system("cls" if os.name == "nt" else "clear")
-
-            addItem = ...
-            
-            print()
-            print('📄 Lista de compras...')
-            while addItem != '':
-                addItem = input('Nome do produto: ')
-
-                if addItem != '':
-                    lista_produtos.append(addItem)
-
-                if addItem == '':
-                    os.system("cls" if os.name == "nt" else "clear")
-
-
-        # *****************************************************
-        # OPÇÃO PARA LISTAR OS DADOS DA LISTA:
-        if opcaoMenu == 'l':
-
-            os.system("cls" if os.name == "nt" else "clear")
-
-            # print()
-            for indice, item in enumerate(lista_produtos, start=1):
-                print(f'{indice}. {item}')
-
-
-        # *****************************************************
-        # OPÇÃO PARA APAGAR OS DADOS DA LISTA:
-        if opcaoMenu == 'a':
-            
-            remItem = ...
-            flagError = ''
-            
-            print()
-            print('📄 Lista de compras...')
-            while remItem != '':
-                os.system("cls" if os.name == "nt" else "clear")
-                
-                for indice, item in enumerate(lista_produtos, start=1):
-                    print(f'{indice}. {item}')
-
-                print()
-                if flagError != '':
-                    print(flagError)
-                    flagError = ''
-                    print()
-                
-                remItem = input('Número do item a ser removido: ')
-
-                if remItem != '':
-
-                    try:
-                        remItem = int(remItem)
-                        lista_produtos.pop(remItem - 1)
-                    except:
-                        flagError ='Digite o número do item.'
-                        continue
-                        
-                if remItem == '':
-                    os.system("cls" if os.name == "nt" else "clear")
-
-
-    # *****************************************************
-    # TRATANDO ERRO NO MENU DO PROGRAMA:
-    except ValueError as e:
-
-        os.system("cls" if os.name == "nt" else "clear")
+    if opcao == 'i':
         
-        print(f'{e}')
-        continue
+        os.system('cls')
+        
+        valor = input('Valor: ')
+        lista.append(valor)
+
+    elif opcao == 'a':
+        
+        indice_str = input('Escolher o índice para apagar: ')
+
+        try:
+            indice = int(indice_str)
+            del lista[indice]
+        except ValueError:
+            print('Por favor, digite números inteiros.')
+        except IndexError:
+            print('Índice não existente na lista.')
+        except Exception:
+            print('Erro deconhecido.')
+
+    elif opcao == 'l':
+        
+        os.system('cls')
+        
+        if len(lista) == 0:
+            print('Nada para listar')
+
+        for i, valor in enumerate(lista):
+            print(i, valor)
+
+    else:
+        
+        print('Por favor, escolha [i], [a] ou [l]')
