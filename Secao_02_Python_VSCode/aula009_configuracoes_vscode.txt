@@ -12,9 +12,7 @@
         "code-runner.ignoreSelection": true,
         "code-runner.runInTerminal": true,
         "code-runner.executorMap": {
-            "python": "clear ; python -u",
-            "javascript": "clear ; node",
-            "typescript": "clear ; ts-node"
+            "python": "clear ; python -u"
         },
         "git.autofetch": true,
         "workbench.colorTheme": "Dark Modern",
