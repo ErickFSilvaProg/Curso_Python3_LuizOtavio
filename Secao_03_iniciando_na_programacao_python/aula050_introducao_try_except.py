@@ -3,6 +3,14 @@
     
         try    -> Tenta executar o código neste bloco.
         except -> Caso ocorra algum erro na execução do código, este bloco será executado.
+
+        ↪ Forçando um erro do tipo ValueError propositalmente:
+
+            raise ValueError("Este é um erro forçado de valor inválido!")
+
+            • raise: É o comando do Python usado para "levantar" ou lançar uma exceção de forma manual.
+            • ValueError: É o tipo de exceção (você pode usar outros, como ZeroDivisionError, TypeError ou criar uma exceção personalizada).
+            • A execução pula imediatamente para o bloco except assim que o raise é acionado.
         
     
     O método .isdigit() em Python verifica se uma string é composta exclusivamente por caracteres numéricos inteiros, retornando True se isso for verdade e False caso contrário.
