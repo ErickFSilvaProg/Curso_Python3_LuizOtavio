@@ -4,7 +4,7 @@
         Não precisamos instalar tais tipos no Python.
     
         Imutáveis (built-in) vistos anteriormente:
-            str, int, float, bool.
+            str, int, float, bool, entre outros.
     
     
     ● Tipos Numéricos:
