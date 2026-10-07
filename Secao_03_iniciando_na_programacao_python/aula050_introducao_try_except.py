@@ -4,7 +4,7 @@
         try    -> Tenta executar o código neste bloco.
         except -> Caso ocorra algum erro na execução do código, este bloco será executado.
 
-        ↪ Forçando um erro do tipo ValueError propositalmente:
+        ↪ Forçando um erro do tipo ValueError:
 
             raise ValueError("Este é um erro forçado de valor inválido!")
 
@@ -33,35 +33,21 @@
 
 """
 
-
-# **************************************************************
-number = input('Vou dobrar o número que você digitar: ')
-
-if number.isdigit():
-    number = float(number)
-
-    print(
-        f'O dobro de {number} é {number * 2:.1f}'
-    )
-else:
-    print('Isso não é o número.')
-
-print()
-
-
 # **************************************************************
 another_number = input('Vou triplicar o número digitado: ')
 
 try:
-    another_number = float(another_number)
-    doubled_number = another_number * 2
+
+    if another_number.isdigit():
+
+        another_number = float(another_number)
+        doubled_number = another_number * 3
+        
+        print(f'O triplo de {another_number} é {doubled_number:.1f}')
+    else:
+        raise ValueError('Isso não é um número')
     
-    print(
-        f'O dobro de {another_number} é {doubled_number:.1f}'
-    )
-except:
-    print(
-        'Isso não é um número'
-    )
+except ValueError as e:
+    print(e)
 
 print()

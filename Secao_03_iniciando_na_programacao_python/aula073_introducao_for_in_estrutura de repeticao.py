@@ -5,21 +5,23 @@
 
 """
 
-# 
-texto  = 'Python'
-novo_texto = ''
+nome = 'Erick'
+lista_frutas = ['uva','morango','pêra','abacaxi','laranja']
 
-for letra in texto:
-    novo_texto += f'|{letra}'
 
-print(f'{novo_texto}|')
+# ************************************
+# Iterando um string:
+
+for letra in nome:
+    print( letra)
+    
 print()
 
 
-# 
-lista_carros = ['golf', 'gol', 'onix', 'tracker', 'mobi', 'pulse']
+# ************************************
+# Iterando uma lista:
 
-for carro in lista_carros:
-    print(carro)
+for fruta in lista_frutas:
+    print(fruta)
 
 print()

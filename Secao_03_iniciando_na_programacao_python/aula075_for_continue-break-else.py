@@ -4,19 +4,24 @@
 
 """
 
-# ****************************************************
-for i in range(10):
-    
-    if i == 2:
-        print('i é 2, pulando...')
+
+aviso = 'Deus, Pátria e Família!'
+
+for i in range(30):
+
+    if i == 13:
+        alerta = 'Petista removido!!!'
+        print(alerta)
         continue
-    
-    if i == 8:
-        print('i é 8, seu else não executará.')
+
+    if i == 22:
+        print('22 é Bolsonaro!!!')
+        print(f'{aviso}')
+        print()
         break
-    
-    for j in range(1, 3):
-        print(i, j)
-        
+
+    print(i)
 else:
-    print('For completo com sucesso!')
+    print()
+    print(f'For completo com sucesso!')
+    print()

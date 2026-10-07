@@ -16,7 +16,7 @@ Comando Python para limpar o terminal:
 
 """
 
-palavra_secreta = 'perfume'
+palavra_secreta = 'Brasil'
 letras_acertadas = ''
 numero_tentativas = 0
 

@@ -32,7 +32,7 @@ print()
 
 lista = [123, True, 'Erick Ferreira', 7564.45, []]
 print(lista)
-print(lista[2].upper())
+print(lista[2])
 
 lista[2] = 'Erick'
 print(lista)
