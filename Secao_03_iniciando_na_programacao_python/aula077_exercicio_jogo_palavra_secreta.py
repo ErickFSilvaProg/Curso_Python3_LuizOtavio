@@ -20,31 +20,34 @@ palavra_secreta = 'Brasil'
 letras_acertadas = ''
 numero_tentativas = 0
 
+
+print('PALAVRA SECRETA...')
 while True:
     palavra_formada = ''
-    letra_digitada = input('Digite uma letra: ')
-    
+    letra_digitada = input('Digite um aletra: ')
+
     numero_tentativas += 1
-    
+
     if len(letra_digitada) > 1:
-        print('Digite apenas uma letra.')
+        print('Digite apenas uma letra')
         print()
         continue
-    
+
     if letra_digitada in palavra_secreta:
         letras_acertadas += letra_digitada
-    
+
     for letra_secreta in palavra_secreta:
         if letra_secreta in letras_acertadas:
             palavra_formada += letra_secreta
         else:
             palavra_formada += '*'
-    
-    print('Paralvra formada:', palavra_formada)
+
+    print(f'Palavra formada: {palavra_formada}')
     print()
-    
+
     if palavra_formada == palavra_secreta:
-        print('Você ganhou, parabéns!!!')
+        print('Você ganhou, parabéns!')
         print('A palavra era', palavra_secreta)
-        print('Tentativas:', numero_tentativas)
+        print(f'Tentativas: {numero_tentativas}')
         print()
+        break
