@@ -24,7 +24,7 @@ numero_tentativas = 0
 print('PALAVRA SECRETA...')
 while True:
     palavra_formada = ''
-    letra_digitada = input('Digite um aletra: ')
+    letra_digitada = input('Digite uma letra: ')
 
     numero_tentativas += 1
 

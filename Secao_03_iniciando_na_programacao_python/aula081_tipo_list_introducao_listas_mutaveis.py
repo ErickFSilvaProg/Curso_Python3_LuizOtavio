@@ -4,7 +4,7 @@
 
         Tipo list - Mutável.
         
-        Uma lista em Python é uma estrutura de dados mutável e ordenada usada para armazenar múltiplos itens em uma única variável
+        Uma lista em Python é uma estrutura de dados mutável e ordenada usada para armazenar múltiplos itens em uma única variável.
 
         
         O que é uma lista?
