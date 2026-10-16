@@ -20,36 +20,19 @@
 
 """
 
-# PROGRAM...
+# PROGRAMA
 
-# Variables:
-name = input('What\'s your name? ')
-age = input('What\'s your age? ')
-print()
+nome = input('Digite seu nome: ')
+idade = input('Digite sua idade: ')
 
 
-if name and age:
-
-    name_reversed = name[::-1]
-    name_space = ...
-    numbers_of_letter = len(name)
-    first_letter = name[0]
-    last_letter = name[-1]
-
-
-    if ' ' in name:
-        name_space = 'contém'
-    else:
-        name_space = 'não comtém'
-
-
-    print(f'Your name is {name}')
-    print(f'Your name reversed is {name_reversed}')
-    print(f'Your name contains (or does not contains) {name_space} space(s)')
-    print(f'Your name has {numbers_of_letter} letter(s)')
-    print(f'The first letter of your name is {first_letter}')
-    print(f'The last letter of your name is {last_letter}')
+if nome and idade:
+    print(f'Seu nome é: {nome}')
+    print(f'Seu nome invertido é: {nome[::-1]}')
+    print(f'Seu nome contém {len(nome)} letras.')
+    print(f'A primeira letra do seu nome é {nome[0]}')
+    print(f'A última letra do seu nome é {nome[-1]}')
 else:
-    print('Sorry, you left fields blank!')
+    print('Desculpe, você deixou campos vazios.')
 
 print()

@@ -1,7 +1,8 @@
 """
     — Constantes em Python:
     
-        Constante em Python é um valor fixo que não deve ser alterado durante a execução de um programa, indicado por convenção através de nomes escritos totalmente em letras maiúsculas.
+        Constante em Python é um valor fixo que não deve ser alterado durante a execução de um programa.
+        Indicado por convenção através de nomes escritos totalmente em letras maiúsculas.
         
         Sem restrição técnica nativa:
             Python não impede tecnicamente que você mude o valor de uma constante.

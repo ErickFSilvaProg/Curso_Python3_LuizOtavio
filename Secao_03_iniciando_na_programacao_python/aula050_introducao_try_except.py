@@ -15,21 +15,21 @@
     
     O método .isdigit() em Python verifica se uma string é composta exclusivamente por caracteres numéricos inteiros, retornando True se isso for verdade e False caso contrário.
 
-    •● Como Funciona:
+        •● Como Funciona:
 
-        Retorna True se a string não estiver vazia e contiver apenas números (de 0 a 9) ou caracteres Unicode que representam dígitos (como sobrescritos ²).
-        
-        Retorna False se houver letras, espaços, pontos decimais, sinais de negativo ou qualquer outro símbolo.
-    
-    •● Para que Serve:
-    
-        Validação de dados:
-        
-            Garantir que o usuário digitou apenas números antes de converter o valor com int().
+            Retorna True se a string não estiver vazia e contiver apenas números (de 0 a 9) ou caracteres Unicode que representam dígitos (como sobrescritos ²).
             
-        Limpeza de strings:
+            Retorna False se houver letras, espaços, pontos decimais, sinais de negativo ou qualquer outro símbolo.
         
-            Filtrar conteúdos em textos.
+        •● Para que Serve:
+        
+            Validação de dados:
+            
+                Garantir que o usuário digitou apenas números antes de converter o valor com int().
+                
+            Limpeza de strings:
+            
+                Filtrar conteúdos em textos.
 
 """
 
