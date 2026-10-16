@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulários - Segurança</title>
+    <!-- CSS -->
+    <style>
+        h3 {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .sublinhado { text-decoration: underline; }
+        .italico { font-style: italic; }
+        
+        .subli-grito {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <article>
+        <h3>
+            Informação importante sobre validação de formulários
+        </h3>
+
+        <p>
+            As validações do HTML5 <span class="sublinhado">não são seguras</span>.<br>
+            Podes usá-las como um primeiro <span class="italico">layer</span> de validação.<br>
+            Podes usar validação de javascript, mas também não é a solução com maior segurança.
+            <span class="subli-grito">Sempre</span> fazer a validação do lado do servidor.
+        </p>
+    </article>
+
+    <hr>
+
+    <section>
+        <form action="https://sys4soft.com/udemy/forms/index.php" method="post">
+
+            <div>
+                <label>
+                    Usuário: 
+                    <input type="email" name="email" required>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Senha: 
+                    <input type="password" name="senha">
+                </label>
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+
+        </form>
+    </section>
+    
+</body>
+
+</html>

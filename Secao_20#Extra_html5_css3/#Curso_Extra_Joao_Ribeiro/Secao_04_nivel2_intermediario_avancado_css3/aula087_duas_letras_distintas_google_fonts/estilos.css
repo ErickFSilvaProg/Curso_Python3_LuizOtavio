@@ -1,0 +1,16 @@
+/* Metamorphous Static */
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap');
+
+/* Playwrite Deutschland Lateinische Ausgangsschrift Guides */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Playwrite+DE+LA+Guides&family=Playwrite+VN:wght@100..400&display=swap');
+
+
+/* ---------------------------------------------------------- */
+.artigo h1 {
+    font-family: "Metamorphous", serif;
+}
+
+.artigo p {
+    font-size: 1.5em;
+    font-family: "Playwrite DE LA Guides", cursive;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atributo Download</title>
+    <!-- CSS -->
+    <style>
+        #cabecalho {
+            padding: 30px 0;
+            font-size: 1.2em;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        #navegacao {
+            padding: 30px;
+            font-size: 1.5em;
+            background-color: rgb(255, 242, 222);
+        }
+
+        .lista {
+            padding: 30px;
+            border: 2px solid burlywood;
+        }
+
+        /* Alvo direto nos números da lista */
+        .lista li::marker {
+            color: rgb(2, 129, 129);
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .lista a {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="cabecalho">
+        <h1>
+            Atributo de download
+        </h1>
+        <p>
+            O recurso de download só está disponível para arquivos dentro do servidor da página.
+        </p>
+    </header>
+    <hr>
+
+    <nav id="navegacao">
+        <!-- Não irá funcionar porque é um recurso externo ao servidor da página/aplicação -->
+        <a href="http://www.sys4soft.com/udemy/texto.txt" target="_blank" download="arquivo_de_texto">Baixar texto (Não irá funcionar)</a>
+
+
+        <!-- Nos próximos exemplos os recursos irão funcionar porque estão dentro do mesmo servidor da página/aplicação -->
+        <ol class="lista">
+            <li>
+                <a href="arquivos/arquivo-texto.txt" download="arquivo_de_texto">Baixar texto</a>
+            </li>
+            <li><a href="arquivos/estudante.jpg" download>Baixar imagem</a></li>
+            <li>
+                <a href="arquivos/google_logo.png" download="Logo do Google">
+                    <img src="arquivos/google_logo.png" alt="Logo do Google">
+                </a>
+            </li>
+        </ol>
+    </nav>
+
+</body>
+
+</html>

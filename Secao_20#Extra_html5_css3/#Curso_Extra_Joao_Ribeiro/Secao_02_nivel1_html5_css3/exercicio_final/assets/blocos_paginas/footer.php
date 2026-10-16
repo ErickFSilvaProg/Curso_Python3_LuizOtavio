@@ -1,0 +1,3 @@
+<footer>
+    Inteligência Artificial &copy; 2030 | &reg; Todos os direitos reservados.
+</footer>

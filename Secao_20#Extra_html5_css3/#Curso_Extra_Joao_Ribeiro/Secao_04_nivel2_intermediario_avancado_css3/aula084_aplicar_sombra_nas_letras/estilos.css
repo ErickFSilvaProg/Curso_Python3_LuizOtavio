@@ -1,0 +1,31 @@
+body {
+    font-size: 2.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: #fff;
+}
+
+.sombra-1 {
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.sombra-2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.sombra-3 {
+    text-shadow: 2px 2px 2px rgb(0, 0, 0),
+                 -1px -1px 2px rgb(150, 4, 4);
+}
+
+.sombra-4 {
+    color: #fff127;
+    text-shadow: -1px -1px 3px #99780b,
+                 2px 2px 3px #535353;
+}

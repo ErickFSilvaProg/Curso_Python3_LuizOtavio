@@ -1,0 +1,96 @@
+/* -----------------------
+Geral */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* 100vh = 100% da altura total da tela. */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(7, 7, 8);
+}
+
+
+/* -----------------------
+Navegação */
+nav {
+    height: 20%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /*  Define o espaço entre os elementos filhos de um contêiner */
+    background-color: rgb(19, 22, 31);
+}
+
+nav > a { /* Seleciona apenas os links que são filhos diretos do elemento de nav. */
+    padding: 10px 60px;
+    border: 1px solid rgb(73, 73, 73);
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav > a:hover {
+    background-color: rgb(73, 73, 73);
+}
+
+
+/* -----------------------
+Redes sociais */
+section {
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: stretch; /* Estica os elementos filhos de um contêiner para preencherem todo o espaço disponível */
+    gap: 20px;
+    color: #fff;
+    background-color: rgb(14, 15, 17);
+}
+
+section > div {
+    margin: 50px 0;
+    padding: 0 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(104, 104, 104);
+    border-radius: 10px;
+    background-color: rgb(43, 45, 49);
+}
+
+section > div > img {
+    width: 40%;
+}
+
+section > div > p {
+    margin-top: 30px;
+    color: lightgray;
+}
+
+
+/* -----------------------
+Footer */
+footer {
+    /* padding: 40px; */
+    height: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    /* color: #fff; */
+    /* background-color: rgb(56, 12, 97); */
+}
+
+footer > div {
+    /* margin-top: 50px; */
+    color: rgb(0, 153, 255);
+    font-weight: bold;
+    font-size: 32px;
+}
+
+footer > p {
+    margin-top: 20px;
+    color: gray;
+    font-size: 12px;
+}

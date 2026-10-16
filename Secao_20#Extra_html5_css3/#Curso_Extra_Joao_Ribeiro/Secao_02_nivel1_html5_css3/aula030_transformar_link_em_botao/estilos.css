@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(31, 31, 31);
+}
+
+.layout {
+    margin: 50px;
+    text-align: center;
+}
+
+.layout p {
+    margin-bottom: 20px;
+}
+
+.layout a {
+    padding: 10px 30px;
+    min-width: 200px;
+    box-shadow: inset -3px -3px 3px rgb(54, 127, 168);
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(224 224 224 / 1);
+    background-color: rgb(23, 99, 143);
+}
+
+.layout a:hover {
+    box-shadow: none;
+}

@@ -1,0 +1,89 @@
+/* ------------------------------------
+GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #f1f1f1;
+}
+
+body {
+    height: 100vh;
+    background-color: #000;
+}
+
+
+/* ------------------------------------
+HEADER */
+
+header {
+    height: 20%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    /* color: #fff; */
+    background-color: rgb(187, 91, 12);
+}
+
+
+/* ------------------------------------
+SECTION */
+section {
+    height: 65%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    /* align-items: stretch; Nívela a altura de todos os containers */
+}
+
+
+/* ------------------------------------
+LEFT SIDEBAR */
+.left-sidebar {
+    padding: 20px;
+    display: flex;
+    /* flex-grow: 2; Ocupará 2x o espaço */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(6, 107, 202)
+}
+
+
+/* ------------------------------------
+MAIN CONTENT */
+.main-content {
+    display: flex;
+    flex-grow: 4;
+    justify-content: center;
+    align-items: center;
+    /* color: #fff; */
+    background-color: rgb(91, 39, 160);
+}
+
+
+/* ------------------------------------
+RIGHT SEFEBAR */
+.right-sidebar {
+    padding: 20px;
+    display: flex;
+    /* flex-grow: 2; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: green;
+}
+
+
+/* ------------------------------------
+FOOTER */
+footer {
+    padding: 20px;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: rgb(102, 13, 87);
+}

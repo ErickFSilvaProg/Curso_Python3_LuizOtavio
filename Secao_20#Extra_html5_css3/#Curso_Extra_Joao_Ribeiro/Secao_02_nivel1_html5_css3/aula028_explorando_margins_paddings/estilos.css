@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(245, 245, 245);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(30, 41, 58);
+}
+
+
+/* *************************************** */
+header {
+    margin: 30px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+
+/* *************************************** */
+article {
+    padding: 0 30px;
+}
+
+article h2 {
+    margin: 20px 0;
+}
+
+article p {
+    padding: 0 20px 20px;
+}
+
+article p a {
+    color: rgb(133, 162, 173);
+}

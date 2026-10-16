@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulários</title>
+    <!-- CSS -->
+    <style>
+        .form-container {
+            margin: auto;
+            width: 60%;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+        }
+        
+        p {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h3>
+            Formulário - Input Radio
+        </h3>
+
+        <form action="https://sys4soft.com/udemy/forms/index.php" method="post">
+            
+            <p>Género:</p>
+            <div class="form-group">
+                <label>
+                    <input type="radio" name="genero" value="masculino" id="" checked>
+                    Masculino
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="radio" name="genero" value="feminino" id="">
+                    Feminino
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="radio" name="sistema-operacional" value="windows" id="" checked>
+                    Windows
+                </label>
+            </div>
+
+            <p>Qual o sistema operacional do seu computador?:</p>
+            <div class="form-group">
+                <label>
+                    <input type="radio" name="sistema-operacional" value="mac" id="">
+                    Mac
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="radio" name="sistema-operacional" value="linux" id="">
+                    Linux
+                </label>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+            </div>
+            
+        </form>
+
+    </div>
+
+</body>
+
+</html>

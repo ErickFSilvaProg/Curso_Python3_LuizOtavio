@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    /* border: 1px solid brown; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    margin: auto;
+    width: 50%;
+    /* border: 1px solid brown; */
+}
+
+article img {
+    margin-top: 40px;
+    width: 100%;
+}

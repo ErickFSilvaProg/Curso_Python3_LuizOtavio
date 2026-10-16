@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+}
+
+div {
+    margin: 10px;
+    height: 200px;
+    border: 1px solid #3d3d3d;
+}
+
+.espaco-1 {/*                   grau°, cor inicial, cor final*/
+    background: linear-gradient(180deg, #219191, #96ffff, #96ffff);
+}
+
+.espaco-2 {
+    background-image: url(../../imagens/fundo.jpg);
+    background-size: 40px;
+    /* background-size: contain; */
+    /* background-size: cover; */
+}
+
+.espaco-3 {
+    background-image: url(../../imagens/outro_fundo.jpg);
+    background-repeat: repeat-x;
+}

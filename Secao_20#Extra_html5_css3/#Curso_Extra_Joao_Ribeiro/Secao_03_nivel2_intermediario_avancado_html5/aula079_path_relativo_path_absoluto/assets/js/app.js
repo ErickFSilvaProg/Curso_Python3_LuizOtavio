@@ -1,0 +1,1 @@
+alert('Caminho relativo e absoluto');

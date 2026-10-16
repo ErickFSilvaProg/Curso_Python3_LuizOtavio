@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    margin-bottom: 30px;
+    padding: 30px;
+    color: #fff;
+    background-color: cadetblue;
+}
+
+section {
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 30px;
+}
+
+article h3 {
+    margin-bottom: 10px;
+}
+
+article span {
+    font-weight: bold;
+}

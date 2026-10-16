@@ -1,0 +1,113 @@
+/* ****************************************
+FONTES */
+@font-face {
+    font-family: "Google_Sans";
+    src: url(../../fontes/Google_Sans/GoogleSans-Regular.ttf);
+}
+
+
+/* ****************************************
+GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Google_Sans";
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    background: linear-gradient(
+        to right bottom, 
+        rgb(85, 215, 229), 
+        rgb(158, 0, 233)
+        );
+}
+
+
+/* ****************************************
+FORMULÁRIO */
+form {
+    padding: 20px 30px 40px;
+    width: 350px;
+    /* height: 450px; */
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .4);
+    background-color: #fff;
+}
+
+/* Cabeçalho */
+.login-close {
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+.login-close button {
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 22px;
+    background: none;
+}
+
+.login-title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+/* Componentes */
+.componentes-form > div,
+.rodape-form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+}
+
+.componentes-form > div > label {
+    color: gray;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.componentes-form > div > input {
+    padding: 10px;
+    border: 1px solid lightgray;
+    color: rgb(68, 68, 68);
+}
+
+/* Rodapé */
+.rodape-form a {
+    margin: 5px 0 30px;
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(133, 169, 247);
+}
+
+.rodape-form input {
+    padding: 15px;
+    border: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    background: linear-gradient(
+        to right,
+        rgb(85, 215, 229), 
+        rgb(158, 0, 233)
+        );
+}
+
+.rodape-form p {
+    margin-top: 40px;
+    text-align: center;
+    color: rgb(77, 77, 77);
+}

@@ -1,0 +1,15 @@
+header, section {
+    margin-bottom: 30px;
+}
+
+section {
+    padding: 30px;
+    border: 1px solid rgb(235, 235, 235);
+}
+
+.enviar {
+    padding: 3px 10px;
+    border: none;
+    color: #fff;
+    background-color: cadetblue;
+}

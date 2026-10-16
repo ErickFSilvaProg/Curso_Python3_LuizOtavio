@@ -1,0 +1,48 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    padding: 20px 30px;
+    color: gainsboro;
+    background-color: darkslategray;
+}
+
+article {
+    padding: 30px;
+    border-bottom: 1px dashed darkslategray;
+}
+
+article:last-child { border-bottom: none; }
+article p { margin-bottom: 0; }
+
+article h3 {
+    margin: 0 0 30px 0;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.2em;
+    background-color: #ccdddd;
+}
+
+/* TABELAS */
+table, th, td {
+    border: 1px solid #3b3b3b;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px 10px;
+}
+
+th {
+    color: #fff;
+    background-color: rgb(96, 109, 122);
+}
+
+caption {
+    margin-bottom: 4px;
+    text-align: left;
+    font-weight: 600;
+}

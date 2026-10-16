@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <!-- Bootstrap 5.3.8 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1>
+                Formulários
+            </h1>
+        </header>
+
+        <section>
+            <h3>
+                — Método POST:
+            </h3>
+            <p>
+                A informação submetida pelo formulário será enviada para o servidor dentro do corpo do pedido. É como se
+                os dados fossem inseridos dentro de uma caixa e enviados para o servidor juntamente com outras
+                informações da página.
+            </p>
+
+            <form action="https://sys4soft.com/udemy/forms/index.php" method="post">
+
+                <div>
+                    <input type="text" name="campo_texto">
+                    <input type="submit" value="Enviar" class="enviar">
+                </div>
+
+            </form>
+        </section>
+
+        <section>
+            <h3>
+                — Método GET:
+            </h3>
+            <p>
+                Com este método os dados serão enviados atravez do endereço do "action".
+            </p>
+            <p>Ao endereço especificado no "action", o HTML irá adicionar um conjunto de informações que contém o nome
+                de cada campo e seus respectivos valores. Dessa forma é possível ver o que está cendo transmitido pelo
+                navegador.
+            </p>
+
+            <form action="https://sys4soft.com/udemy/forms/index.php" method="get">
+
+                <div>
+                    <input type="text" name="campo_texto">
+                    <input type="submit" value="Enviar" class="enviar">
+                </div>
+
+            </form>
+        </section>
+
+    </div>
+</body>
+
+</html>

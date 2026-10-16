@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário</title>
+    <!-- CSS -->
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <section>
+        <h1>
+            Formulários - Input reset & Button
+        </h1>
+
+        <form action="https://sys4soft.com/udemy/forms/index.php" method="post">
+
+            <fieldset>
+                <legend>Autenticação</legend>
+
+                <div>
+                    <label>Usuário:<br>
+                        <input type="text" name="campo-usuario" required>
+                    </label>
+                </div>
+                <div>
+                    <label>Senha:<br>
+                        <input type="password" name="campo-senha" required>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Opções</legend>
+
+                <div>
+                    <label>
+                        <input type="radio" name="opcao" value="opcao-1" checked> Opção 1
+                    </label>
+                    <label>
+                        <input type="radio" name="opcao" value="opcao-2"> Opçao 2
+                    </label>
+                    <label>
+                        <input type="radio" name="opcao" value="opcao-3"> Opção 3
+                    </label>
+                </div>
+            </fieldset>
+
+            <div>
+                <button type="button">Botão</button>
+                <input type="reset" value="Limpar" accesskey="l" title="alt + l">
+                <input type="submit" value="Enviar" accesskey="n" title="alt + n">
+            </div>
+
+        </form>
+    </section>
+    
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+<?php
+
+$texto = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime modi deleniti explicabo ipsam fugit cumque, dolores at facere illo ad hic, cupiditate ea tempore commodi praesentium ducimus facilis ab rem? Nemo, quis corrupti! Consequatur non aliquam nihil consequuntur. Ab laudantium nobis illum excepturi amet. Hic quia, nemo accusantium voluptatibus maxime aperiam dolore magni perferendis rerum placeat aliquam cupiditate tenetur maiores!';

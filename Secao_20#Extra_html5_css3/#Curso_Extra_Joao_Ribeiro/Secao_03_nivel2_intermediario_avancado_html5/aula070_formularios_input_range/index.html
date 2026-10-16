@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário</title>
+    <!-- CSS -->
+    <style>
+        .form-container {
+            margin: auto;
+            width: 60%;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <section class="form-container">
+        <h3>
+            Formulário - Input range
+        </h3>
+
+        <div class="form-group">
+            <input type="range" name="campo-intervalo" min="0" max="10" step="2" value="0" oninput="mostrar(this.value)">
+            <p id="valor_range">0</p>
+        </div>
+
+        <form action="https://sys4soft.com/udemy/forms/index.php" method="post">
+            
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+            </div>
+
+        </form>
+    </section>
+
+    <script>
+        function mostrar(value) {
+            document.getElementById("valor_range").innerHTML = value;
+        }
+    </script>
+    
+</body>
+
+</html>

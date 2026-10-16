@@ -1,0 +1,14 @@
+header {
+    margin-bottom: 30px;
+    padding: 20px;
+    color: rgb(255, 246, 234);
+    background-color: #c9971a;
+}
+
+article {
+    padding: 8px;
+}
+
+article h2 {
+    margin-bottom: 15px;
+}

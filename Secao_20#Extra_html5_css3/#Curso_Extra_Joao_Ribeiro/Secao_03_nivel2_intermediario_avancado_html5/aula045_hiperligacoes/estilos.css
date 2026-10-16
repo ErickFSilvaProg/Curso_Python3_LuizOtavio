@@ -1,0 +1,55 @@
+/* --------------------------------------
+RESETS ESTRUTURAIS */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+a { display: block; }
+
+
+/* --------------------------------------
+NAV */
+nav {
+    margin: 10px 0 30px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+    margin-right: 6px;
+    list-style: none;
+}
+
+nav li:last-child { margin-right: 0; }
+
+nav a {
+    padding: 6px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 243);
+    /* font-size: 1.1em; */
+    background-color: rgb(69, 90, 37);
+}
+
+
+/* --------------------------------------
+HIPERLIGAÇÕES */
+section article {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgb(247, 247, 229);
+}
+
+section div:last-child { margin-bottom: 0; }
+
+
+/* --------------------------------------
+RESETS ESPECÍFICOS */
+.clear-both { clear: both; }

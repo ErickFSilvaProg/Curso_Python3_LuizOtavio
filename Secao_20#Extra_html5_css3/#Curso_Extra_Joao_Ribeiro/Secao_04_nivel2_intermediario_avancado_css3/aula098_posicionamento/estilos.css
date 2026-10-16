@@ -1,0 +1,28 @@
+/* Página 1 */
+div {
+    margin: 100px;
+    width: 300px;
+    height: 100px;
+    overflow: auto;
+    background-color: yellow;
+}
+
+.posicao {
+    position: relative; /* Relativo ao seu elemento pai */
+    top: 30px;
+    left: 50px;
+    padding: 5px;
+    color: white;
+    background-color: green;
+}
+
+
+/* Página 2 */
+#pagina2 .posicao2 {
+    position: absolute; /* Relativo ao body da página*/
+    bottom: 100px;
+    right: 100px;
+    padding: 5px;
+    color: #000;
+    background-color: yellowgreen;
+}

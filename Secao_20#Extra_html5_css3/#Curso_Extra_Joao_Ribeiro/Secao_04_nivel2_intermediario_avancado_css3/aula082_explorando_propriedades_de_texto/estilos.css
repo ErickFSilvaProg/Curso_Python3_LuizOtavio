@@ -1,0 +1,104 @@
+/* Folha de estilos de CSS3 */
+
+/* color --------------------------- */
+.cor-do-texto-1 {
+    color: red;
+}
+
+.cor-do-texto-2 {
+    color: rgb(255, 0, 0);
+}
+
+.cor-do-texto-3 {
+    color: #f00;
+}
+
+
+/* font-family --------------------------- */
+.familia-de-letra {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.letra-monospace {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* font-size --------------------------- */
+.letra-tamanho-pixel {
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.letra-tamanho-em {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.letra-tamanho-rem {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* font-style */
+.letra-italico {
+    font-style: italic;
+}
+
+
+/* font-weight */
+.letra-espessura {
+    font-weight: bold;
+}
+
+
+/* text-transform */
+.letra-transformada-minuscula {
+    text-transform: lowercase;
+}
+
+.letra-transformada-maiusculas {
+    text-transform: uppercase;
+}
+
+.letra-transformada-capitalizada {
+    text-transform: capitalize;
+}
+
+
+/* text-decoration */
+.letra-sublinhada {
+    text-decoration: underline;
+}
+
+.letra-rasurada {
+    text-decoration: line-through;
+}
+
+.texto-com-linha-superior {
+    text-decoration: overline;
+}
+
+
+.letra-decoration-1 {
+    text-decoration: underline green;
+}
+
+.letra-decoration-2 {
+    text-decoration: underline red;
+}
+
+.letra-decoration-3 {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+}
+
+
+.estilo-de-letra {
+    text-decoration: underline overline dotted brown;
+    color: rgb(14, 204, 204);
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

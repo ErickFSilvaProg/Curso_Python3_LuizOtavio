@@ -1,0 +1,15 @@
+header {
+    /* margin-bottom: 30px; */
+    padding: 20px 30px;
+    color: gainsboro;
+    background-color: darkslategray;
+}
+
+article {
+    /* margin-bottom: 30px; */
+    padding: 30px;
+    border-bottom: 1px dashed darkslategray;
+}
+
+article:last-child { border-bottom: none; }
+article p { margin-bottom: 0; }
