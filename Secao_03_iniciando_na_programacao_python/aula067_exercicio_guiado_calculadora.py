@@ -1,68 +1,125 @@
-iniciar = input('Abrir calculadora? [S]im | [N]ão ').upper().startswith('S')
-print()
-
-if iniciar is False:
-    print('Saiu do programa...')
-    print()
+# CALCULADORA
+# ********************************************
+# Bibliotecas:
+import os
 
 
-while iniciar:
+# ********************************************
+# Variáveis globais:
+abrirCalculadora = ...
+opcaoInvalida = ...
+txtOpcInvalida = '\nOpção inválida!'
+
+numerosInvalidos = False
+msgErro = ''
+novoCalculo = False
+
+
+# ********************************************
+# Programa: Tela de login.
+print('Abrir calculadora?')
+abrirCalculadora = input('[S]im | [N]ão: ').upper()
+
+if abrirCalculadora != 'S' and abrirCalculadora != 'N':
+    os.system('cls')
+    opcaoInvalida = True
+
+    while opcaoInvalida:
+        os.system('cls')
+        print(txtOpcInvalida)
+
+        print('\nAbrir calculadora?')
+        abrirCalculadora = input('[S]im | [N]ão: ').upper()
+
+        if abrirCalculadora != 'S' and abrirCalculadora != 'N':
+            continue
+        else:
+            opcaoInvalida = False
     
-    numeros_validos = ...
-    operadores_permitidos = '/*-+'
-    
-    
-    # **********************************************
+if abrirCalculadora == 'N':
+    os.system('cls')
+    abrirCalculadora = False
+    print('\nPrograma encerrado...\n')
+
+
+# ********************************************
+# Programa: Entrada de dados.
+if abrirCalculadora == 'S':
+    os.system('cls')
+
+while abrirCalculadora:
+    # ********************************************
+    # Variáveis locais:
+    operadoresPermitidos = '+-*/'
+
+
+    # ********************************************
     # Entrada de dados:
-    numero_1 = input('Digite o 1º número: ')
-    operador = input('Digite o operador [/*-+]: ')
-    numero_2 = input('Digite o segundo número: ')
+    if msgErro != '':
+        os.system('cls')
+        print()
+        print(msgErro)
+        msgErro = ''
+        print()
+
+    print('Qual operação você deseja realizar?')
+    operador = input('Escolha o operador (+ - * /): ')
     print()
-    
-    
-    # **********************************************
-    # Verificando as informações inseridas:
-    try:
-        numero_1 = float(numero_1)
-        numero_2 = float(numero_2)
-        numeros_validos = True
-        
-    except:
-        numeros_validos = False
-        
-        
-    if numeros_validos is False:
-        print('Número inválido digitado.')
-        print()
-        continue
-        
+
     if len(operador) > 1:
-        print('Digite apenas um operador.')
         print()
+        msgErro = 'Digite apenas um operador.'
         continue
-        
-    if operador not in operadores_permitidos:
-        print('Operador inválido.')
-        print()
+
+    if operador not in operadoresPermitidos:
+        msgErro = f'O operadaor "{operador}" não é válido.'
         continue
+
+    try:
+
+        priNumero = float(input('Digie o 1º número: '))
+        segNumero = float(input('Digie o 2º número: '))
     
-    
+    except:
+
+        msgErro = 'Número inválido digitado.'
+        continue
+
+
     # **********************************************
     # Processamento e resultado:
     try:
-        
+        os.system('cls')
+        print()
+
+        if operador == '+':
+            print(f'Resultado: {priNumero + segNumero}')
+            
+        if operador == '-':
+            print(f'Resultado: {priNumero - segNumero}')
+            
+        if operador == '*':
+            print(f'Resultado: {priNumero * segNumero}')
+            
         if operador == '/':
-            print(f'Resultado: {numero_1 / numero_2}')
-        elif operador == '*':
-            print(f'Resultado: {numero_1 * numero_2}')
-        elif operador == '-':
-            print(f'Resultado: {numero_1 - numero_2}')
-        elif operador == '+':
-            print(f'Resultado: {numero_1 + numero_2}')
-        
-        print()
-        break
+            print(f'Resultado: {priNumero / segNumero}')
     
-    except Exception as error:
-        print(f'Erro encontrado: {error}')
-        print()
+    except Exception as erro:
+
+        msgErro = f'Erro encontrado: \n{erro}'
+        continue
+
+
+    # **********************************************
+    # Novo Cálculo ou encerrar sistema:
+    print()
+    print('Realizar outro cálculo?')
+    novoCalculo = input('[S]im | [N]ão: ').upper().startswith('S')
+
+    if novoCalculo:
+        os.system('cls')
+        continue
+    else:
+        os.system('cls')
+        print('\nPrograma encerrado...\n')
+        break
