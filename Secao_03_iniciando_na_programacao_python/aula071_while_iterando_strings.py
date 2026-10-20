@@ -11,7 +11,7 @@
 
 """
 
-texto = 'O Python é uma linguagem de programação multiparadigma. Python foi criado por Guido Van Rossum.'
+texto = 'Python é uma linguagem de programação multiparadigma. O python foi criado por Guido Van Rossum.'
 
 lista = ['Casa','Apartamento','Sobrado','Duplex','Triplex']
 

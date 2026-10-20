@@ -6,7 +6,7 @@
 """
 
 
-texto = 'Python-3.13'
+texto = 'Python 3.13'
 i = 0
 
 while i < len(texto):

@@ -5,8 +5,7 @@ Faça um jogo para o usuário adivinhar qual a palavra secreta.
     2. Quando o usuário digitar uma letra, você vai conferir se a letra digitada está na palavra secreta.
     3. Se a letra digitada estiver na palavra secreta; exiba a letra;
     4. Se a letra digitada não estiver na palavra secreta; exiba *.
-
-Faça a contagem de tentativas do seu usuário.
+    5. Faça a contagem de tentativas do seu usuário.
 
 
 Comando Python para limpar o terminal:
