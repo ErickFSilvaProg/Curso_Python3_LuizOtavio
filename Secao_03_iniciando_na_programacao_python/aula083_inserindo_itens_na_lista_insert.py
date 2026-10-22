@@ -14,31 +14,68 @@
             • Os dados podem variar entre diversos tipos de dados.
 
         
-        Métodos úteis:
+        — Métodos úteis:
 
-            → append(value): Adiciona um item ao fim da lista.
-            → extend(iterable): Estende a lista, adicionando no fim todos os elementos do argumento iterável passado como parâmetro.
-            → insert(index, value): Insere um item em uma dada posição. O primeiro argumento é o índice do elemento antes do qual será feita a inserção
-            → remove(value): Remove o primeiro item encontrado na lista cujo valor é igual ao parâmetro informado.
-            → pop(index=-1): Remove o item na posição fornecida na lista e retorna. Se nenhum índice for especificado, remove e retorna o último item da lista. 
-            → index(value[, start[, stop]]): Retorna o índice de base zero da primeira ocorrência de value na lista.
-            → count(value): Devolve o número de vezes em que value aparece na lista.
-            → sort(): Ordena os itens na lista.
-            → reverse(): Inverte a ordem dos elementos na lista.
-            → copy(): Devolve uma cópia rasa da lista.
-            → del: Remove itens, fatias ou até a lista inteira usando o índice numérico da posição. (del lista[:])
-            → clear(): Remove todos os itens de uma lista. Similar a del.
+            • .append(value): Adiciona o argumento passado exatamente como um único item.
+            Aumenta sempre em 1, independentemente do que você passar.
+            
+            • .extend(value): Percorre (itera) o objeto enviado e adiciona cada item individualmente na lista original.
+            Aumenta de acordo com a quantidade de elementos que estavam dentro do iterável.
+            
+            • .insert(index, value): Adiciona um novo elemento em uma posição específica da lista, alterando a própria lista no local (in-place) e retornando "None".
+            
+            • .remove(value): Remove o primeiro valor encontrado na lista cujo valor é igual ao parâmetro informado e retorna "None".
+           
+            • .pop(index=-1): Remove o item na posição fornecida na lista e retorna o item removido.
+            Se nenhum índice for especificado, remove e retorna o último item da lista.
+            
+            • .index(): Procura um elemento específico e retorna a posição (o número do índice) da primeira vez que esse elemento aparece.
+            Pode-se limitar a busca definindo um ponto de início e de fim: lista.index(item, inicio, fim).
+            
+            • .count(value): Conta quantas vezes um valor específico aparece na lista e retorna esse número como um valor inteiro.
+            
+            • .sort(): Ordena os elementos de uma lista diretamente no local (in-place), alterando a própria lista original e retornando "None".
+            
+            • .reverse(): Inverte a ordem dos elementos na lista.
+            
+            • .copy(): Cria uma cópia rasa (ou shallow copy) de uma lista.
+            Ele gera uma nova lista na memória com os mesmos elementos da lista original, mas de forma independente no primeiro nível.
+            
+            • del: Serve para remover elementos específicos, fatias (slices) ou a própria lista da memória com base no seu índice ou posição.
+            Se você usar del sem especificar um índice, ele apaga a variável da lista por completo do escopo de memória.
+            
+            • .clear(): Remove todos os itens de uma lista em Python, deixando-a vazia.
         
             
-        😅 Erros conhecidos:
+        — Erros conhecidos:
 
             Erro ao tentar acessar um índice que não existe na lista:
                 ↪ IndexError: list index out of range
+        
+        — Tutorial sobre listas:
+        (https://www.datacamp.com/pt/tutorial/python-list-methods)
 
 """
 
-lista = [10,20,30,40]
-print(lista)
+# Método .append() - list:
+numeros = [1,2,3,4]
+print(numeros)
+numeros.append([5,6])
+print(f'append(): {numeros}')
+print()
 
-lista.insert(50, 5000)
-print(lista[50])
+
+# Método .extend() - list:
+numeros = [1,2,3,4]
+print(numeros)
+numeros.extend([5,6])
+print(f'extend(): {numeros}')
+print()
+
+
+# Método .insert() - list:
+carros = ['polo','onix','hb20']
+print(carros)
+carros.insert(1,'PULSE')
+print(f'insert(): {carros}')
+print()

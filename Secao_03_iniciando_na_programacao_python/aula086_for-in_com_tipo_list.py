@@ -1,5 +1,11 @@
+pessoas = [
+    [1,'Erick Ferreira','Programador python',6756.87],
+    [2,'Gabriel Ferreira','Engenheiro civil',8829.92]
+]
 
-lista = [1, 'Maria', 2.2, ['Helena', 'Samuel', 'Carlos'], True]
-
-for nome in lista:
-    print(nome, type(nome))
+for pessoa in pessoas:
+    
+    for info in pessoa:
+        print(info)
+    
+    print()
