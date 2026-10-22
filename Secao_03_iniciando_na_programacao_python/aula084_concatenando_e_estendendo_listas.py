@@ -4,14 +4,14 @@
 
         Tipo list - Mutável.
         
-        Uma lista em Python é uma estrutura de dados mutável e ordenada usada para armazenar múltiplos itens em uma única variável
+        Uma lista em Python é uma estrutura de dados mutável e ordenada usada para armazenar múltiplos itens em uma única variável.
 
         
-        O que é uma lista?
+        O que caracteriza uma lista em Python?
             
-            • Uma coleção de itens entre colchetes [].
-            • Os itens são separados por vírgulas.
-            • Os dados podem ser de vários tipos mistos.
+            • Uma coleção de itens entre colchetes [];
+            • Os itens são separados por vírgulas;
+            • Os dados podem variar entre diversos tipos de dados.
 
         
         Métodos úteis:

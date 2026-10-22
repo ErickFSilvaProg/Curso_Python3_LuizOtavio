@@ -7,11 +7,11 @@
         Uma lista em Python é uma estrutura de dados mutável e ordenada usada para armazenar múltiplos itens em uma única variável.
 
         
-        O que é uma lista?
+        O que caracteriza uma lista em Python?
             
-            • Uma coleção de itens entre colchetes [].
-            • Os itens são separados por vírgulas.
-            • Os dados podem ser de vários tipos mistos.
+            • Uma coleção de itens entre colchetes [];
+            • Os itens são separados por vírgulas;
+            • Os dados podem variar entre diversos tipos de dados.
 
 """
 
@@ -30,9 +30,31 @@ print(type(nomes2))
 print()
 
 
+# *****************************************************
 lista = [123, True, 'Erick Ferreira', 7564.45, []]
 print(lista)
 print(lista[2])
 
 lista[2] = 'Erick'
 print(lista)
+print()
+
+
+# *****************************************************
+pessoas = [
+    [1,'Erick Ferreira','Programador python',6756.87],
+    [2,'Gabriel Ferreira','Engenheiro civil',8829.92]
+]
+
+print(type(pessoas))
+print()
+
+print(pessoas)
+print()
+
+for pessoa in pessoas:
+    
+    for info in pessoa:
+        print(info)
+    
+    print()
