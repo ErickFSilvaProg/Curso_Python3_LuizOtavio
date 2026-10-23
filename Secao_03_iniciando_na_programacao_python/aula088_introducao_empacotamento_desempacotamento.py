@@ -1,24 +1,33 @@
 """
-    — Introduçao ao empacotamento e desempacotamento:
+    — Introdução ao empacotamento e desempacotamento:
 
-        •● Empacotamento e desempacotamento em Python são recursos para agrupar múltiplos valores em uma única variável ou separar os elementos de uma coleção em variáveis individuais.
-
-            • Empacotamento (Packing): O empacotamento acontece quando atribuímos vários valores separados por vírgula a uma única variável, criando automaticamente uma tupla. Também ocorre ao usar o asterisco (*) para juntar argumentos variáveis em funções.
-
-                ↪ Empacotando valores em uma tupla:
-                    dados = 1, 2, "Python"
-                    print(dados)  # Saída: (1, 2, 'Python')
+        •● Empacotamento e desempacotamento, em Python, são mecanismos que permitem agrupar múltiplos valores em uma única estrutura de dados ou espalhar os elementos de uma coleção em variáveis e argumentos individuais.
 
             
-            • Desempacotamento (Unpacking): O desempacotamento ocorre quando pegamos os elementos de uma estrutura iterável (como uma lista ou tupla) e os distribuímos em várias variáveis separadas. Para isso funcionar perfeitamente, o número de variáveis deve corresponder à quantidade de itens.
-
-                ↪ Desempacotando uma tupla:
-                    a, b, c = (1, 2, "Python")
-                    print(a)  # Saída: 1
-                    print(b)  # Saída: 2
-                    print(c)  # Saída: Python
+            • Empacotamento (Packing): O empacotamento acontece quando você junta vários valores soltos e os coloca dentro de uma única estrutura, geralmente uma tupla.
             
-            • Uso do operador Asterisco (*): O asterisco permite o desempacotamento parcial ou a captura de múltiplos argumentos.
+            Quando você separa valores por vírgulas sem colchetes ou chaves, o Python cria uma tupla automaticamente.
+
+                ↪ Empacotando valores em uma tupla chamada "dados":
+                    
+                    dados = "Ana", 25, "Engenheira"
+                    print(dados)  # Saída: ('Ana', 25, 'Engenheira')
+                
+            Em funções (*args e **kwargs): O empacotamento também é usado para aceitar um número variável de argumentos em uma função usando o asterisco (* para posicionais e ** para nomeados)
+
+            • Desempacotamento (Unpacking): O desempacotamento faz o oposto, ele pega uma coleção (como uma lista, tupla ou dicionário) e distribui cada um dos seus elementos em variáveis separadas.
+            
+            O número de variáveis do lado esquerdo deve ser exatamente igual ao número de elementos da coleção do lado direito.
+
+                ↪ Dempacotando valores de uma tupla chamada "coordenada":
+
+                    coordenada = (10, 20)
+                    x, y = coordenada
+
+                    print(x)  # Saída: 10
+                    print(y)  # Saída: 20
+
+            • Uso do operador asterisco (*): O asterisco permite o desempacotamento parcial ou a captura de múltiplos argumentos.
 
                 ↪ Em atribuições: O * captura o restante dos itens em formato de lista:
 
@@ -30,21 +39,25 @@
 
 """
 
-listaNomes = ['Maria','Helena','Luiz']
-print(listaNomes)
+# Empacotamento:
+lista = 'Python', 3.15, 2026
+print(type(lista))
+print(lista)
 print()
 
-nome1, nome2, nome3 = listaNomes
-print(nome1)
-print(nome2)
-print(nome3)
+
+# Desempacotamento:
+dado1, dado2, dado3 = lista
+
+print(dado1)
+print(dado2)
+print(dado3)
 print()
 
-nome4, *_ = listaNomes
-print(nome4)
-print(_)
-print()
+dado1, *_ = lista
+print(dado1)
 
-for nome in _:
-    print(nome)
+for dado in _:
+    print(dado)
+
 print()

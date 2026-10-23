@@ -5,9 +5,9 @@
 
 """
 
+nomes = ['Maria','João','Lucas','Isac']
 
-frutas = ['Pera', 'Uva', 'Maçã', 'Morango', 'Banana']
-indices = range(len(frutas))
+for i in range(len(nomes)):
+    print(f'{i+1}. {nomes[i]}')
 
-for i in indices:
-    print(i, frutas[i])
+print()
