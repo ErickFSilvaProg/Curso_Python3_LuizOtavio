@@ -41,8 +41,11 @@
             • .copy(): Cria uma cópia rasa (ou shallow copy) de uma lista.
             Ele gera uma nova lista na memória com os mesmos elementos da lista original, mas de forma independente no primeiro nível.
             
-            • del: Serve para remover elementos específicos, fatias (slices) ou a própria lista da memória com base no seu índice ou posição.
+            • del: Remove itens, fatias (slices) ou a própria lista diretamente pela sua posição (índice), sem retornar nenhum valor.
             Se você usar del sem especificar um índice, ele apaga a variável da lista por completo do escopo de memória.
+
+                ↪ Remove por índice: Você informa a posição exata do elemento que deseja apagar (ex: del lista[0]).
+                ↪ Remove fatias (slices): É possível apagar vários elementos de uma vez usando intervalos (ex: del lista[1:3]).
             
             • .clear(): Remove todos os itens de uma lista em Python, deixando-a vazia.
         
