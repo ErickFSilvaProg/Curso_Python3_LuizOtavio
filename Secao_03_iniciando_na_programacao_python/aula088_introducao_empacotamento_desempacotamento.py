@@ -46,18 +46,24 @@ print(lista)
 print()
 
 
-# Desempacotamento:
-dado1, dado2, dado3 = lista
+# Programa:
+dados = []
 
-print(dado1)
-print(dado2)
-print(dado3)
+while True:
+
+    entrada = input('Insira dados: ')
+
+    if entrada == '':
+        break
+
+    dados.append(entrada)
 print()
 
-dado1, *_ = lista
-print(dado1)
+
+# Desempacotamento:
+nome, *_ = dados
+print(nome)
 
 for dado in _:
     print(dado)
-
 print()
