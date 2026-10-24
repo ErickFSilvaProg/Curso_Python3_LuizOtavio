@@ -51,12 +51,18 @@ dados = []
 
 while True:
 
-    entrada = input('Insira dados: ')
-
+    entrada = input('insira dados: ')
+    
     if entrada == '':
         break
 
-    dados.append(entrada)
+    try:
+        dados.append(int(entrada))
+    except ValueError:
+        try:
+            dados.append(float(entrada))
+        except ValueError:
+            dados.append(entrada)
 print()
 
 
